@@ -1,21 +1,23 @@
+# list_aggs return a list of info for option O:NIO250131C00005000
 
 from polygon import RESTClient
-# list_aggs return a list of info for option O:NIO250131C00005000
+from datetime import datetime
+
 
 client = RESTClient("zC4gTZtCcPheJAj2_YYFEeQhYBj0fGRQ")
 
-aggs = []
-for a in client.list_aggs(
-    "O:NIO250131C00005000",
-    1,
-    "day",
-    "2024-11-30",
-    "2025-01-03",
-    limit=50,
-):
-    aggs.append(a)
-
-print(aggs)
+# aggs = []
+# for a in client.list_aggs(
+#     "O:NIO250131C00005000",
+#     1,
+#     "day",
+#     "2024-11-30",
+#     "2025-01-03",
+#     limit=50,
+# ):
+#     aggs.append(a)
+#
+# print(aggs)
 
 
 # [Agg(open=0.48, high=0.49, low=0.48, close=0.49, volume=34, vwap=0.4865, timestamp=1733979600000, transactions=12, otc=None),
@@ -33,3 +35,9 @@ print(aggs)
 # Agg(open=0.18, high=0.21, low=0.14, close=0.15, volume=5088, vwap=0.17, timestamp=1735621200000, transactions=210, otc=None),
 # Agg(open=0.17, high=0.26, low=0.15, close=0.18, volume=3982, vwap=0.1858, timestamp=1735794000000, transactions=332, otc=None),
 # Agg(open=0.19, high=0.21, low=0.15, close=0.2, volume=2584, vwap=0.1799, timestamp=1735880400000, transactions=264, otc=None)]
+
+# timestamp is unix timestamp, Unix time is a system for representing timestamps as the number of seconds that have elapsed since January 1, 1970
+# use function below to do transfermation
+# from datetime import datetime
+# timestamp=int('1735880400000')/1000
+# print(datetime.utcfromtimestamp(timestamp).strftime('%Y-%m-%d %H:%M:%S'))
