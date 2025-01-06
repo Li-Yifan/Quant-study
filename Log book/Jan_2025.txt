@@ -1,0 +1,6 @@
+# ###
+# Jan 5
+# 1. Work on importing stock info using  list_aggs function
+#
+# 
+# ###

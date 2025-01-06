@@ -6,18 +6,18 @@ from datetime import datetime
 
 client = RESTClient("zC4gTZtCcPheJAj2_YYFEeQhYBj0fGRQ")
 
-# aggs = []
-# for a in client.list_aggs(
-#     "O:NIO250131C00005000",
-#     1,
-#     "day",
-#     "2024-11-30",
-#     "2025-01-03",
-#     limit=50,
-# ):
-#     aggs.append(a)
-#
-# print(aggs)
+aggs = []
+for a in client.list_aggs(
+    "O:NIO250131C00005000",
+    1,
+    "minute",
+    "2025-01-03",
+    "2025-01-03",
+    limit=5000,
+):
+    aggs.append(a)
+
+print(aggs[2].open)
 
 
 # [Agg(open=0.48, high=0.49, low=0.48, close=0.49, volume=34, vwap=0.4865, timestamp=1733979600000, transactions=12, otc=None),
