@@ -1,6 +1,13 @@
-# ###
-# Jan 5
-# 1. Work on importing stock info using  list_aggs function
-#
-# 
-# ###
+Jan 5
+
+1. Work on importing stock info using list_aggs function,"read_agg_result_CSV.py"
+
+
+Jan 6
+1.
+
+
+
+Jan Tasks:
+1. familiar with most of polygon example files
+2
