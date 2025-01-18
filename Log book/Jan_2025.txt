@@ -3,11 +3,14 @@ Jan 5
 1. Work on importing stock info using list_aggs function,"read_agg_result_CSV.py"
 
 
-Jan 6
-1.
+Jan 6 - Jan 18
+Break
+
+
+
 
 
 
 Jan Tasks:
-1. familiar with most of polygon example files
-2
+1. Familiar with most of polygon example files
+2. Find Quant kaggle examples
