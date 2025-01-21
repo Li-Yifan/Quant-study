@@ -61,7 +61,7 @@ from polygon import RESTClient
 symbols = ["INTC", "AMD", "NVDA", "TXN", "QCOM", "MU", "AVGO", "ADI", "MCHP", "NXPI"]
 
 # Date range you are interested in
-start_date = "2022-04-01"
+start_date = "2023-04-01"
 end_date = "2023-05-10"
 
 
@@ -126,8 +126,13 @@ def plot_correlation_heatmap(correlation_matrix):
 
 
 def main():
+    print('sss')
     stock_data = fetch_stock_data(symbols, start_date, end_date)
+    print('1sss')
+
     daily_returns = calculate_daily_returns(stock_data)
+    print('2sss')
+
     correlation_matrix = compute_correlation_matrix(daily_returns)
 
     print("Correlation Matrix:")
