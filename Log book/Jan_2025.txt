@@ -14,8 +14,10 @@ Jan 22
 Read algorithm trading
 
 Jan 28 .... New Year Eve
-Just successfully run deepseek code for straddle in python, good start 
+Just successfully run deepseek code for straddle in python, good start
 
+Jan 29
+keep reading algorithm trading 
 
 
 Jan Tasks:
